@@ -1,0 +1,160 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #d4d0c8;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.title-bar {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.title-buttons button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #e0e0e0;
+    border-right: 1px solid #a0a0a0;
+    display: flex;
+    flex-direction: column;
+}
+
+.server {
+    background-color: #c0c0c0;
+    color: red;
+    padding: 10px;
+    border-bottom: 1px solid #a0a0a0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.channels {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.channel {
+    padding: 10px;
+    color: #000080;
+    border-bottom: 1px solid #a0a0a0;
+    cursor: pointer;
+}
+
+.channel.active {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-bar {
+    background-color: #c0c0c0;
+    padding: 5px;
+    border-bottom: 1px solid #a0a0a0;
+    font-weight: bold;
+}
+
+.chat-window {
+    font-family: VT323, monospace;
+    flex: 1;
+    margin-left: 10px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.chat-window p {
+    margin: 7.5px 0; /* Reduce the space between messages */
+}
+
+.unavailable {
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 45px;
+    color: red;
+    margin-top: 20px;
+}
+
+.join-message {
+    color: green;
+    font-style: italic;
+}
+
+.leave-message {
+    color: purple;
+    font-style: italic;
+}
+
+.change-message {
+    color: blue;
+    font-style: italic;
+}
+
+.member-sidebar {
+    width: 200px;
+    background-color: #e0e0e0;
+    border-left: 1px solid #a0a0a0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.members-title {
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.members {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.member {
+    font-family: VT323, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 0px solid #a0a0a0;
+}
